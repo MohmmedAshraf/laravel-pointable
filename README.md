@@ -1,19 +1,19 @@
-[![Latest Stable Version](https://poser.pugx.org/outhebox/laravel-pointabl/v/stable)](https://packagist.org/packages/outhebox/laravel-pointabl)
-[![Total Downloads](https://poser.pugx.org/outhebox/laravel-pointabl/downloads)](https://packagist.org/packages/outhebox/laravel-pointabl)
-[![Latest Unstable Version](https://poser.pugx.org/outhebox/laravel-pointabl/v/unstable)](https://packagist.org/packages/outhebox/laravel-pointabl) [![License](https://poser.pugx.org/outhebox/laravel-pointabl/license)](https://packagist.org/packages/outhebox/laravel-pointabl)
+[![Latest Stable Version](https://poser.pugx.org/outhebox/laravel-pointable/v/stable)](https://packagist.org/packages/outhebox/laravel-pointable)
+[![Total Downloads](https://poser.pugx.org/outhebox/laravel-pointable/downloads)](https://packagist.org/packages/outhebox/laravel-pointable)
+[![Latest Unstable Version](https://poser.pugx.org/outhebox/laravel-pointable/v/unstable)](https://packagist.org/packages/outhebox/laravel-pointable) [![License](https://poser.pugx.org/outhebox/laravel-pointable/license)](https://packagist.org/packages/outhebox/laravel-pointable)
 
 # Laravel Pointable
 
 Point Transaction system for Laravel 5+
 
-Original Package from [Trexology](https://github.com/Trexology/laravel-pointable)
+Original Package from [Trexology](https://github.com/Trexology/laravel-pointablee)
 
 ## Installation
 
 First, pull in the package through Composer.
 
 ```js
-composer require outhebox/laravel-pointable
+composer require outhebox/laravel-pointablee
 ```
 
 And then include the service provider within `app/config/app.php`.
