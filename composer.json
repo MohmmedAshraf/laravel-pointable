@@ -1,6 +1,6 @@
 {
-    "name": "alariva/laravel-pointable",
-    "description": "Point system for Laravel 5",
+    "name": "outhebox/laravel-pointable",
+    "description": "Point system for Laravel",
     "keywords": ["points", "pointable", "laravel", "loyalty", "reward"],
     "license": "MIT",
     "authors": [
@@ -12,15 +12,19 @@
             "name": "Ariel Vallese",
             "email": "alariva@gmail.com"
         }
+        {
+            "name": "Mohamed Ashraf",
+            "email": "cupo.ashraf@gmail.com"
+        }
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.5.9",
-        "illuminate/support": "~5.0"
+        "php": ">=7.2",
+        "laravel/framework": "~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0"
     },
     "autoload": {
         "psr-4": {
-            "Alariva\\Pointable\\": "src/"
+            "Outhebox\\Pointable\\": "src/"
         }
     }
 }

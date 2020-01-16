@@ -1,8 +1,6 @@
 <?php
 
-namespace Alariva\Pointable\Contracts;
-
-use Illuminate\Database\Eloquent\Model;
+namespace Outhebox\Pointable\Contracts;
 
 interface Pointable
 {
@@ -12,11 +10,9 @@ interface Pointable
     public function transactions();
 
     /**
-     *
      * @return mix
      */
     public function countTransactions();
-
 
     /**
      * @param $amount

@@ -1,32 +1,32 @@
 <?php
 
-namespace Alariva\Pointable\Traits;
+namespace Outhebox\Pointable\Traits;
 
-use Alariva\Pointable\Models\Transaction;
-use Illuminate\Database\Eloquent\Model;
+use Outhebox\Pointable\Models\Transaction;
 
 trait Pointable
 {
     /**
+     * @param null|mixed $amount
+     *
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */
     public function transactions($amount = null)
     {
-        return $this->morphMany(Transaction::class, 'pointable')->orderBy('created_at','desc')->take($amount);
+        return $this->morphMany(Transaction::class, 'pointable')->orderBy('created_at', 'desc')->take($amount);
     }
 
     /**
-     *
      * @return mix
      */
-    public function countTransactions(){
-      return $this->transactions()
-          ->count();
+    public function countTransactions()
+    {
+        return $this->transactions()
+            ->count();
     }
 
     /**
-     *
-     * @return double
+     * @return float
      */
     public function currentPoints()
     {

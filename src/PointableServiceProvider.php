@@ -1,6 +1,6 @@
 <?php
 
-namespace Alariva\Pointable;
+namespace Outhebox\Pointable;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,9 +13,9 @@ class PointableServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-	    $this->publishes([
-	        __DIR__.'/../database/migrations/' => database_path('migrations')
-	    ], 'migrations');
+        $this->publishes([
+            __DIR__ . '/../database/migrations/' => database_path('migrations'),
+        ], 'migrations');
     }
 
     /**

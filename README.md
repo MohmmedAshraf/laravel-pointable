@@ -1,10 +1,10 @@
-[![Latest Stable Version](https://poser.pugx.org/trexology/pointable/v/stable)](https://packagist.org/packages/trexology/pointable)
-[![Total Downloads](https://poser.pugx.org/trexology/pointable/downloads)](https://packagist.org/packages/trexology/pointable)
-[![Latest Unstable Version](https://poser.pugx.org/trexology/pointable/v/unstable)](https://packagist.org/packages/trexology/pointable) [![License](https://poser.pugx.org/trexology/pointable/license)](https://packagist.org/packages/trexology/pointable)
+[![Latest Stable Version](https://poser.pugx.org/outhebox/laravel-pointabl/v/stable)](https://packagist.org/packages/outhebox/laravel-pointabl)
+[![Total Downloads](https://poser.pugx.org/outhebox/laravel-pointabl/downloads)](https://packagist.org/packages/outhebox/laravel-pointabl)
+[![Latest Unstable Version](https://poser.pugx.org/outhebox/laravel-pointabl/v/unstable)](https://packagist.org/packages/outhebox/laravel-pointabl) [![License](https://poser.pugx.org/outhebox/laravel-pointabl/license)](https://packagist.org/packages/outhebox/laravel-pointabl)
 
 # Laravel Pointable
 
-Point Transaction system for Laravel 5
+Point Transaction system for Laravel 5+
 
 Original Package from [Trexology](https://github.com/Trexology/laravel-pointable)
 
@@ -20,13 +20,13 @@ And then include the service provider within `app/config/app.php`.
 
 ```php
 'providers' => [
-    Alariva\Pointable\PointableServiceProvider::class
+    Outhebox\Pointable\PointableServiceProvider::class
 ];
 ```
 
 At last you need to publish and run the migration.
 ```
-php artisan vendor:publish --provider="Alariva\Pointable\PointableServiceProvider" && php artisan migrate
+php artisan vendor:publish --provider="Outhebox\Pointable\PointableServiceProvider" && php artisan migrate
 ```
 
 -----
@@ -37,8 +37,8 @@ php artisan vendor:publish --provider="Alariva\Pointable\PointableServiceProvide
 
 namespace App;
 
-use Alariva\Pointable\Contracts\Pointable;
-use Alariva\Pointable\Traits\Pointable as PointableTrait;
+use Outhebox\Pointable\Contracts\Pointable;
+use Outhebox\Pointable\Traits\Pointable as PointableTrait;
 use Illuminate\Database\Eloquent\Model;
 
 class User extends Model implements Pointable
