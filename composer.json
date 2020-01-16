@@ -26,5 +26,12 @@
         "psr-4": {
             "Outhebox\\Pointable\\": "src/"
         }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Outhebox\\Pointable\\PointableServiceProvider"
+        ]
+      }
     }
 }
